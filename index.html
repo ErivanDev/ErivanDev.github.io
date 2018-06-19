@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script language="javascript" type="text/javascript" src="script/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script/jquery.fancybox.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script/script.js"></script>
+    <script language="javascript" type="text/javascript" src="script/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="script/new.json"></script>
+    <script language="javascript" type="text/javascript" src="script/pontos.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="home">
+            <div id="canvas"></div>
+            <div id="resumo">      
+                <p id="descricao">
+                Portfolio de Erivan Pereira, Desenvolvedor Iniciante, estudante de Sistemas e Midias Digitais na UFC, tem como maior foco o 
+                desenvolvimento de jogos.
+                </p>
+            </div>
+        </div>
+        <div id="main">
+            <div class="partes" id="sobre">
+                <h1>Sobre</h1>
+                <div class="info">
+                    <h2 id="informacoes">Informações</h2>
+                    <p>
+                        Olá, seja bem-vindo ao meu portfólio, me chamo Erivan Pereira, nasci no dia 
+                        1º de Março de 1999, sou natural de Caucaia, Ceará. Estudante de Sistemas e 
+                        Mídias Digitais na UFC, curso que escolhi pelo interesse no desenvolvimente de 
+                        jogos digitais, tenho como referência profissional Fumito Ueda, Game Designer de 
+                        Shadow of the Colossus, jogo o qual gosto muito. Tenho interesse em jogos que 
+                        rodam nos navegadores. Além de jogos desenvolvo variados projetos universitários 
+                        e pessoais.
+                    </p>
+                </div>
+                <div class="info">
+                    <h2 id="habilidades">Habilidades</h2>
+                    <table id="tabela">
+                        <tbody>
+                            <tr>
+                                <td class="linguagem">HTML</td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">JAVASCRIPT</td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">CSS</td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">PHP</td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">ANDROID</td>
+                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">JAVA</td>
+                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="linguagem">C++</td>
+                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="partes" id="games">
+                <h1>Games</h1>
+                <div id="slidegames">
+                    <img class="mySlides inativo left" src="imagens/emojibubbles.png">
+                    <img class="mySlides ativo center" src="imagens/jornadadafe.png">
+                    <img class="mySlides inativo right" src="imagens/fortaleza2100.png">
+                </div>
+                <div id="sobreGame">
+                    <h2 id="tituloGame">
+                        Jornada da Fé
+                    </h2>
+                    <p  id="descricaoGame">
+                        Jornada da Fé é um jogo desenvolvido com outros colegas na faculdade, onde conta a jornada 
+                        de um romeiro até a estatua do Padre Cicero.
+                    </p>
+                </div>
+            </div>
+
+            <div class="partes" id="projetos">
+                <h1>Projetos</h1>
+                <div id="partes-container">  
+                    <div class="projetos-itens" id="parte-1">
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
+                            <div class="projetos">
+                                <p> THREE.JS TESTE </p>
+                                <img src="imagens/teste3d.png" alt="THREE.JS: TESTE">
+                            </div> 
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox"></a>
+                            <div class="projetos">
+                                <p> PHASER.JS: TESTE ISOMETRICO </p>
+                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
+                            </div> 
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox"></a>
+                            <div class="projetos">
+                                <p> NODE.JS: SIMPLE AGARIO </p>
+                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projetos-itens" id="parte-2">
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">
+                            <div class="projetos">
+                                <p> PHASER.JS: TESTE ISOMETRICO </p>
+                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
+                            </div> 
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
+                            <div class="projetos">
+                                <p> NODE.JS: SIMPLE AGARIO </p>
+                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
+                            <div class="projetos">
+                                <p> THREE.JS TESTE </p>
+                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projetos-itens" id="parte-3">
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                            
+                            <div class="projetos">
+                                <p> NODE.JS: SIMPLE AGARIO </p>
+                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
+                            <div class="projetos">
+                                <p> THREE.JS TESTE </p>
+                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                
+                            <div class="projetos">
+                                <p> PHASER.JS: TESTE ISOMETRICO </p>
+                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="projetos-itens" id="parte-4">
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                    
+                            <div class="projetos">
+                                <p> THREE.JS TESTE </p>
+                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                
+                            <div class="projetos">
+                                <p> PHASER.JS: TESTE ISOMETRICO </p>
+                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
+                            </div>
+                        </a>
+                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                 
+                            <div class="projetos">
+                                <p> NODE.JS: SIMPLE AGARIO </p>
+                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="partes" id="contato">
+                <h1>Contato</h1>
+                <form id="contato">  
+                    <div class="fa fa-user icons"></div><input placeholder="Nome" type="text" class="entradas"><br>
+                    <div class="fa fa-envelope icons"></div><input placeholder="Email" type="text" class="entradas"><br>
+                    <div class="fa fa-phone icons"></div><input placeholder="Telefone" type="text" class="entradas"><br>
+                    <div class="fa fa-header icons"></div><input placeholder="Titulo" type="text" class="entradas"><br>
+                    <div class="fa fa-comment-o icons"></div><textarea placeholder="Mensagem" id="mensage" class="entradas"></textarea><br>
+                    <button value="Enviar" id="envie-button"><a href="#contato" class="fa fa-paper-plane icons"></a></button>
+                </form> 
+            </div>
+        </div>
+        <div id="rodape"> 
+            Desenvolvido Por Erivan Pereira 
+        </div>
+        <div class="pages">
+            <ul>
+            <li class="pages-itens">
+                <a href="#home">
+                    <i class="fa fa-home  icones"></i><span class="titulo-page"> Home </span>
+                </a>
+            </li>
+            <li class="pages-itens">
+                <a href="#sobre">
+                    <i class="fa fa-info-circle  icones"></i><span class="titulo-page"> Sobre </span>
+                </a>
+            </li>
+            <li class="pages-itens">
+                <a href="#games">
+                    <i class="fa fa-gamepad  icones"></i><span class="titulo-page"> Games </span>
+                </a>
+            </li>
+            <li class="pages-itens">
+                <a href="#projetos">
+                    <i class="fa fa-code icones"></i><span class="titulo-page"> Projetos </span>
+                </a>
+            </li>
+            <li class="pages-itens">
+                <a href="#contato">
+                    <i class="fa fa-envelope  icones"></i><span class="titulo-page"> Contato </span>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/snoopyrado" target="_blank">
+                        <i class="fa fa-twitter-square titulo-redes" id="twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://br.pinterest.com/snoopyrado/" target="_blank">
+                        <i class="fa fa-pinterest-square titulo-redes" id="pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ErivanPereira" target="_blank">
+                        <i class="fa fa-github-square titulo-redes" id="github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/106269597591137833014" target="_blank">
+                        <i class="fa fa-google-plus-square titulo-redes" id="googleplus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
