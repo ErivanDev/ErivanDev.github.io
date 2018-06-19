@@ -7,7 +7,7 @@ function setup(){
     canvas.id("banner-canvas");
     document.getElementById("banner-canvas").style.width = "100%";
     document.getElementById("banner-canvas").style.height = "100%";
-    var requestURL = 'new.json';
+    var requestURL = 'script/new.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
