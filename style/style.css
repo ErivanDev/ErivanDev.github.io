@@ -295,6 +295,10 @@ li {
     vertical-align: middle;
 }
 
+#canvas{
+    position: relative;
+}
+
 li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -308,7 +312,8 @@ a:hover{
 }
 
 #descricao {
-    width: 90%;
+    position: absolute;
+    width: 30%;
     padding: 10px 20px;
     margin: auto;
     font-size: 1em;
@@ -426,12 +431,12 @@ a:hover{
 }
 
 #canvas{
-    width: 30%;
+    width: 100%;
     display: block;
 }
 
 #resumo{
-    width: 70%;
+    width: 100%;
     float: right;
 }
 
@@ -486,10 +491,6 @@ a:hover{
         padding: 20px 0px;
         width: 100%;
     }
-    #canvas{
-        width: 80%;
-        margin: auto;
-    }
     .pages{
         width: 100%;
     }
@@ -498,10 +499,6 @@ a:hover{
     }
     #home{
         display: block;
-    }
-    #resumo{
-        float: none;
-        margin: auto;
     }
     #page-container{
         width: 100%;
