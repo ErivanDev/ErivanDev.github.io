@@ -10,7 +10,7 @@ function setup(){
     var b = $("#canvas").outerWidth();
     $("#banner-canvas").css( { width: b , height: b/3 } );
 
-    var requestURL = 'script/passaro.json';
+    var requestURL = 'script/new.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
