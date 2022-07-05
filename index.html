@@ -1,286 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="style/style.css">
-    <script language="javascript" type="text/javascript" src="script/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="script/jquery.fancybox.min.js"></script>
-    <script language="javascript" type="text/javascript" src="script/script.js"></script>
-    <script language="javascript" type="text/javascript" src="script/p5.js"></script>
-    <script language="javascript" type="text/javascript" src="script/new.json"></script>
-    <title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto:ital,wght@0,300;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script language="javascript" type="text/javascript" src="script/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="script/jquery.fancybox.min.js"></script>
+	<script language="javascript" type="text/javascript" src="script/script.js"></script>
+	<title>ErivanDEV</title>
 </head>
+
 <body>
-    <div id="page-container">
-        <div id="home">
-            <div id="canvas">
-                <p id="descricao">
-                Portfolio de Erivan Pereira, Desenvolvedor Iniciante, estudante de Sistemas e Midias Digitais na UFC, tem como maior foco o 
-                desenvolvimento de jogos.
-                </p>
-            </div>
-        </div>
-        <div id="main">
-            <div class="partes" id="sobre">
-                <h1>Sobre</h1>
-                <div class="info">
-                    <h2 id="informacoes">Informações</h2>
-                    <p>
-                        Olá, seja bem-vindo ao meu portfólio, me chamo Erivan Pereira, nasci no dia 
-                        1º de Março de 1999, sou natural de Caucaia, Ceará. Estudante de Sistemas e 
-                        Mídias Digitais na UFC, curso que escolhi pelo interesse no desenvolvimente de 
-                        jogos digitais, tenho como referência profissional Fumito Ueda, Game Designer de 
-                        Shadow of the Colossus, jogo o qual gosto muito. Tenho interesse em jogos que 
-                        rodam nos navegadores. Além de jogos desenvolvo variados projetos universitários 
-                        e pessoais.
-                    </p>
-                </div>
-                <div class="info">
-                    <h2 id="habilidades">Habilidades</h2>
-                    <table id="tabela">
-                        <tbody>
-                            <tr>
-                                <td class="linguagem">HTML</td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">JAVASCRIPT</td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">CSS</td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">PHP</td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">ANDROID</td>
-                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">JAVA</td>
-                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="linguagem">C++</td>
-                                <td class="estrelas"><i class="fa fa-star-half-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                                <td class="estrelas"><i class="fa fa-star-o"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+	<div id="navbar">
+		<ul id="navbar-inner">
+			<div id="navbar-logo" style="cursor: pointer; height: 47px; position: absolute;">
+				<svg height="47px" style="float: left; position: absolute;">
+					<path style="fill:rgb(255, 255, 255);" d="M50 0 L70 0 L130 47 L110 47 Z"></path>
+				</svg>
+				<img src="imagens/logo.svg"
+					style="height: calc(100% - 10px); float: left; position: absolute; padding: 5px;"></img>
+			</div>
+			<!-- <li><a href="#blog">blog</a></li> -->
+			<li><a href="#contato">contato</a></li>
+			<li><a href="#projetos">projetos</a></li>
+			<li><a href="#games">games</a></li>
+			<li><a href="#sobre">sobre</a></li>
+			<li><a class="active" href="#home">home</a></li>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="home">
+			<div id="home-inner">
+				<div style="float: right; overflow: hidden; padding: 4px;">
+					<img src="imagens/foto.svg" style="scale: 0.8;"></img>
+					<!--<svg id="svg" height="400" width="400" style="position: absolute;">
+						<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+						<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+						<circle cx="250" cy="150" r="30" fill="#D5F472"></circle>
+						Sorry, your browser does not support inline SVG.
+					</svg>
+					<svg class="rotate" height="400" width="400" viewBox="-90 -90 490 490" id="svg">
+						<--<g>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+						</g> --
+						<g class="rotateReverse">
+							<circle r="30" fill="#95D5F6" cx="0" cy="0"></circle>
+							<circle r="8" fill="#DEF4FF" cx="13" cy="-9"></circle>
+						</g>
+						Sorry, your browser does not support inline SVG.
+					</svg>-->
+				</div>
+				<div id="resumo" style="float: left;">
+					<h4 style="margin: 0px; font-family: 'Montserrat', sans-serif;">Bem-vindo ao portfólio de</h4>
+					<h1 style="margin: 0px; font-family: 'Roboto', sans-serif, italic;
+					font-size: 40pt;
+					font-stretch: inherit;
+					font-style: italic;
+					font-weight: 400;">Erivan Pereira</h1>
+					<h5 style="margin: 0px; font-family: 'Montserrat', sans-serif;">Desenvolvedor formado no curso de Sistemas e
+						Mídias Digitais da UFC</h6>
+				</div>
+			</div>
+		</div>
+		<div id="sobre">
+			<div id="sobre-inner">
+				<div id="sobre-text" style="width: 50%; margin: auto; overflow: auto;">
+					<h1>Sobre</h1>
+					<p style="font-family: 'Montserrat', sans-serif;">
+						Olá, me chamo <b>Erivan Pereira</b>,
+						tenho <b>23 anos</b>, sou natural de <b>Caucaia, Ceará</b>.
+						Sou formado no curso de <b>Sistemas e Mídias Digitais</b> na
+						Universidade Federal do Ceará, curso que escolhi pelo interesse no
+						desenvolvimente de jogos digitais, mas também me interesso
+						por diversas outras áreas de desenvolvimento.
+					</p>
+				</div>
+				<div id="interesses" style="width: 80%; margin: auto; overflow: auto;">
+					<h2>Interesses</h2>
+					<div style="width: 100%;overflow: auto;margin: auto;">
+						<div class="part">
+							<svg viewBox="0 0 400 400" height="150" width="150">
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+								<text x="200" y="217" fill="white" font-size="38px" text-anchor="middle">🎮 Games</text>
+								Sorry, your browser does not support inline SVG.
+							</svg>
+							<p>Jogos foram o motivo para ter adquirido minha formação</p>
+						</div>
+						<div class="part">
+							<svg viewBox="0 0 400 400" height="150" width="150">
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+								<text x="200" y="217" fill="white" font-size="38px" text-anchor="middle">JavaScript</text>
+								Sorry, your browser does not support inline SVG.
+							</svg>
+							<p>JavaScript é uma linguagem que sempre me chamou atenção pela comunicação direta com o usuário</p>
+						</div>
+						<div class="part">
+							<svg viewBox="0 0 400 400" height="150" width="150">
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+								<text x="200" y="217" fill="white" font-size="38px" text-anchor="middle">IA</text>
+								Sorry, your browser does not support inline SVG.
+							</svg>
+							<p>Já desenvolvi vários trabalhos em IA, usando PyTorch e Tensorflow</p>
+						</div>
+					</div>
+				</div>
+				<div id="habilidades" style="width: 100%; margin: auto;">
+					<h2>Habilidades</h2>
+					<div>
+						<svg class="svg-par" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image x="10" y="14" width="380" height="380"
+								xlink:href="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png"
+								clip-path="url(#myCircle)" />
+							Sorry, your browser does not support inline SVG.
+						</svg>
+						<svg class="svg-impar" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image
+								xlink:href="https://camo.githubusercontent.com/f733af1ca121e97b0111af0fa767e319fb69948ac04c9bacedba04e4ff6d394f/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f3435322f6a6176617363726970742d2d76312e706e67"
+								clip-path="url(#myCircle)" x="90" y="90" width="220" height="220"></image>
+							Sorry, your browser does not support inline SVG.
+						</svg>
+						<svg class="svg-par" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image x="10" y="14" width="380" height="380"
+								xlink:href="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png"
+								clip-path="url(#myCircle)" />
+							Sorry, your browser does not support inline SVG.
+						</svg>
+						<svg class="svg-impar" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image x="100" y="100" width="200" height="200"
+								xlink:href="https://raw.githubusercontent.com/github/explore/f3e22f0dca2be955676bc70d6214b95b13354ee8/topics/c/c.png"
+								clip-path="url(#myCircle)" />
+							Sorry, your browser does not support inline SVG.
+						</svg>
+						<svg class="svg-par" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image x="100" y="100" width="200" height="200"
+								xlink:href="https://cdn.jsdelivr.net/npm/@programming-languages-logos/python@0.0.0/python.png"
+								clip-path="url(#myCircle)" />
+							Sorry, your browser does not support inline SVG.
+						</svg>
+						<svg class="svg-impar" viewBox="0 0 400 400" height="150" width="150">
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							<clipPath id="myCircle">
+								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+							</clipPath>
+							<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
+							<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
+							<image x="120" y="120" width="160" height="160"
+								xlink:href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Android_logo_2019_%28stacked%29.svg/2346px-Android_logo_2019_%28stacked%29.svg.png"
+								clip-path="url(#myCircle)"></image>
+							Sorry, your browser does not support inline SVG.
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="games">
+			<div id="games-inner">
+				<div style="overflow: auto;">
+					<h1 style="text-align: center;">Games</h1>
+				</div>
+				<div id="slidegames">
+					<div class="mySlides inativo left">
+						<a href="https://erivandev.github.io/EmojiBubbles/" target="_blank">
+							<i class="fa-solid fa-circle-play play"></i>
+						</a>
+						<img src="imagens/emojibubbles.png">
+					</div>
+					<div class="mySlides ativo center">
+						<a href="https://geleiagames.itch.io/bilros" target="_blank">
+							<i class="fa-solid fa-circle-play play"></i>
+						</a>
+						<img src="imagens/bilros.png">
+					</div>
+					<div class="mySlides inativo right">
+						<a href="https://erivandev.github.io/Fortaleza2050/" target="_blank">
+							<i class="fa-solid fa-circle-play play"></i>
+						</a>
+						<img src="imagens/fortaleza2050.png">
+					</div>
+				</div>
+				<div id="sobreGame">
+					<h2 id="tituloGame">
+						Bilros
+					</h2>
+					<p id="descricaoGame">
+						Bilros é um jogo de ritmo musical, que mistura a mecânica difundida dentro dos rhythm games com a temática
+						da cultura de renda de bilros, prática muito comum em regiões do Brasil, como no Nordeste, região de origem
+						dos desenvolvedores. Desenvolvi junto com colegas, desempenhando o papel de programador.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="projetos">
+			<div id="projetos-inner">
+				<h1 style="text-align: center;">Projetos</h1>
+				<div style="overflow: auto;">
+					<div class="projeto">
+						<!-- https://fontawesome.com/search?q=node&s=solid%2Cbrands -->
+						<div class="tags" style="margin: 10px;">
+							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-node-js" style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
+							<i class="fa-brands fa-react" style="font-size:24px; margin: 1px; float: right; color: #61dafb"></i>
+							<a target="_blank" href="https://gitlab.com/netaura/netauraexperience">
+								<i title="Netaura foi o meu Trabalho de Conclução de Curso. Ele é um jogo multiplayer para o ensino de Redes de Computadores. Click para ver mais."
+									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+								</i>
+							</a>
+						</div>
+						<div>
+							<img src="imagens/netaura.png" style="width: 90%;height: 90%;margin: 5%;">
+						</div>
+						<div style="margin: auto; margin-bottom: 10px;">
+							<span>
+								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">Netaura
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="projeto">
+						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
+						<div class="tags" style="margin: 10px;">
+							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<a target="_blank" href="https://github.com/ErivanUFC/diagrama">
+								<i title="FADA foi um projeto que desenvolvi durante a minha bolsa de iniciação científica. Sendo uma ferramenta para visualização e análise de dados das notas dos alunos. Click para ver mais."
+									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+								</i>
+							</a>
+						</div>
+						<div>
+							<img src="imagens/fada.png" style="width: 90%;height: 90%;margin: 5%;">
+						</div>
+						<div style="margin: auto; margin-bottom: 10px;">
+							<span>
+								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">FADA
+								</div>
+							</span>
+						</div>
+					</div>
+					<div class="projeto">
+						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
+						<div class="tags" style="margin: 10px;">
+							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<a target="_blank" href="https://github.com/ErivanDev/InfograficoCV2">
+								<i title="Trabalho de Comunicação Visual foi um trabalho desenvolvido durante a disciplina de Comunicação Visual II. Click para ver mais."
+									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+								</i>
+							</a>
+						</div>
+						<div>
+							<img src="imagens/infografo_comunicaovisual.png" style="width: 90%;height: 90%;margin: 5%;">
+						</div>
+						<div style="margin: auto; margin-bottom: 10px;">
+							<span>
+								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
+									Trabalho de Comunicação Visual</div>
+							</span>
+						</div>
+					</div>
+					<div class="projeto">
+						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
+						<div class="tags" style="margin: 10px;">
+							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-node-js" style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
+							<a target="_blank" href="https://github.com/ErivanDev/SimpleAgarioClone">
+								<i title="Clone Simples do Agar.IO foi um experimento que realizei para ver os usos da biblioteca Socket.IO. Click pra ver mais."
+									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+								</i>
+							</a>
+						</div>
+						<div>
+							<img src="imagens/simple_agario.png" style="width: 90%;height: 90%;margin: 5%;">
+						</div>
+						<div style="margin: auto; margin-bottom: 10px;">
+							<span>
+								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">Clone
+									Simples do Agar.IO</div>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="artigos">
+					<h2 style="text-align: center;">Artigos Publicados</h2>
+					<div id="sobreArtigo">
+						<a target="_blank" href="http://ojs.sector3.com.br/index.php/sbie/article/view/8921">
+							<i class="fa-solid fa-arrow-up-right-from-square"
+								style="float: right;font-size: 24px;color: teal; margin: 17.72px;"></i>
+						</a>
+						<h3 id="tituloGame">
+							Uma Análise sobre o Desempenho de Alunos de Graduação em Disciplinas Iniciais de Programação
+						</h3>
+						<p id="descricaoGame">
+							Erivan Lima, Emanuel Coutinho
+						</p>
+					</div>
+					<div id="sobreArtigo">
+						<a target="_blank" href="https://sol.sbc.org.br/index.php/educomp/article/view/19209">
+							<i class="fa-solid fa-arrow-up-right-from-square"
+								style="float: right;font-size: 24px;color: teal; margin: 17.72px;"></i>
+						</a>
+						<h3 id="tituloGame">
+							AmongNET Game: Um relato de experiência do uso da Virtualidade e da Realidade Aumentada no Ensino Remoto
+							Emergencial de Redes de Computadores
+						</h3>
+						<p id="descricaoGame">
+							Erivan Lima, Ricardo Rodrigues Pereira, Windson Viana
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contato">
+			<div id="contato-inner">
+				<h1 style="text-align: center;">Contato</h1>
+				<div style="overflow: auto; background: #e8fff5;">
+					<div class="container">
+						<div style="width: 50%;float: left;">
+							<div style="margin: auto;width: 80%;">
+								<svg id="svg" height="400" width="400" style="position: absolute;">
+									<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+									<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
+									<circle cx="250" cy="150" r="30" fill="#D5F472"></circle>
+									Sorry, your browser does not support inline SVG.
+								</svg>
+								<svg class="rotate" height="400" width="400" viewBox="-90 -90 490 490" id="svg">
+									<g class="rotateReverse">
+										<circle r="30" fill="#95D5F6" cx="0" cy="0"></circle>
+										<circle r="8" fill="#DEF4FF" cx="13" cy="-9"></circle>
+									</g>
+									Sorry, your browser does not support inline SVG.
+								</svg>
+							</div>
+						</div>
+						<div style="width: 50%;float: left;">
+							<iframe name="resposta" style="width: 100%; height: 34px; border:2px solid #e8fff5;"></iframe>
+							<form target="resposta" action="https://unashamed-case.000webhostapp.com/envio.php" method="post">
+								<div style="width: calc(50% - 5px); float: left; margin-right: 5px;">
+									<label for="email">Email</label>
+									<input type="text" id="email" name="email" placeholder="Seu email..">
+								</div>
+								<div style="width: calc(50% - 5px); float: left; margin-left: 5px;">
+									<label for="nome">Nome</label>
+									<input type="text" id="nome" name="nome" placeholder="Seu nome..">
+								</div>
+								<div>
+									<label for="mensagem">Mensagem</label>
+									<textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem.."
+										style="height:200px"></textarea>
+								</div>
 
-            <div class="partes" id="games">
-                <h1>Games</h1>
-                <div id="slidegames">
-                    <img class="mySlides inativo left" src="imagens/emojibubbles.png">
-                    <img class="mySlides ativo center" src="imagens/jornadadafe.png">
-                    <img class="mySlides inativo right" src="imagens/fortaleza2100.png">
-                </div>
-                <div id="sobreGame">
-                    <h2 id="tituloGame">
-                        Jornada da Fé
-                    </h2>
-                    <p  id="descricaoGame">
-                        Jornada da Fé é um jogo desenvolvido com outros colegas na faculdade, onde conta a jornada 
-                        de um romeiro até a estatua do Padre Cicero.
-                    </p>
-                </div>
-            </div>
-
-            <div class="partes" id="projetos">
-                <h1>Projetos</h1>
-                <div id="partes-container">  
-                    <div class="projetos-itens" id="parte-1">
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
-                            <div class="projetos">
-                                <p> THREE.JS TESTE </p>
-                                <img src="imagens/teste3d.png" alt="THREE.JS: TESTE">
-                            </div> 
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox"></a>
-                            <div class="projetos">
-                                <p> PHASER.JS: TESTE ISOMETRICO </p>
-                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
-                            </div> 
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox"></a>
-                            <div class="projetos">
-                                <p> NODE.JS: SIMPLE AGARIO </p>
-                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="projetos-itens" id="parte-2">
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">
-                            <div class="projetos">
-                                <p> PHASER.JS: TESTE ISOMETRICO </p>
-                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
-                            </div> 
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
-                            <div class="projetos">
-                                <p> NODE.JS: SIMPLE AGARIO </p>
-                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
-                            <div class="projetos">
-                                <p> THREE.JS TESTE </p>
-                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="projetos-itens" id="parte-3">
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                            
-                            <div class="projetos">
-                                <p> NODE.JS: SIMPLE AGARIO </p>
-                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                        
-                            <div class="projetos">
-                                <p> THREE.JS TESTE </p>
-                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                
-                            <div class="projetos">
-                                <p> PHASER.JS: TESTE ISOMETRICO </p>
-                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
-                            </div> 
-                        </a>
-                    </div>
-                    <div class="projetos-itens" id="parte-4">
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                    
-                            <div class="projetos">
-                                <p> THREE.JS TESTE </p>
-                                <img src="imagens/teste3d.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                
-                            <div class="projetos">
-                                <p> PHASER.JS: TESTE ISOMETRICO </p>
-                                <img src="imagens/isometrico.png" alt="PHASER.JS: TESTE ISOMETRICO">
-                            </div>
-                        </a>
-                        <a data-fancybox data-type="iframe" href="https://erivanpereira.github.io/game/index.html" class="btn btn-primary fancybox">                                                 
-                            <div class="projetos">
-                                <p> NODE.JS: SIMPLE AGARIO </p>
-                                <img src="imagens/agario.png" alt="THREE.JS TESTE">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="partes" id="contato">
-                <h1>Contato</h1>
-                <form id="contato">  
-                    <div class="fa fa-user icons"></div><input placeholder="Nome" type="text" class="entradas"><br>
-                    <div class="fa fa-envelope icons"></div><input placeholder="Email" type="text" class="entradas"><br>
-                    <div class="fa fa-phone icons"></div><input placeholder="Telefone" type="text" class="entradas"><br>
-                    <div class="fa fa-header icons"></div><input placeholder="Titulo" type="text" class="entradas"><br>
-                    <div class="fa fa-comment-o icons"></div><textarea placeholder="Mensagem" id="mensage" class="entradas"></textarea><br>
-                    <button value="Enviar" id="envie-button"><a href="#contato" class="fa fa-paper-plane icons"></a></button>
-                </form> 
-            </div>
-        </div>
-        <div id="rodape"> 
-            Desenvolvido Por Erivan Pereira 
-        </div>
-        <div class="pages">
-            <ul>
-            <li class="pages-itens">
-                <a href="#home">
-                    <i class="fa fa-home  icones"></i><span class="titulo-page"> Home </span>
-                </a>
-            </li>
-            <li class="pages-itens">
-                <a href="#sobre">
-                    <i class="fa fa-info-circle  icones"></i><span class="titulo-page"> Sobre </span>
-                </a>
-            </li>
-            <li class="pages-itens">
-                <a href="#games">
-                    <i class="fa fa-gamepad  icones"></i><span class="titulo-page"> Games </span>
-                </a>
-            </li>
-            <li class="pages-itens">
-                <a href="#projetos">
-                    <i class="fa fa-code icones"></i><span class="titulo-page"> Projetos </span>
-                </a>
-            </li>
-            <li class="pages-itens">
-                <a href="#contato">
-                    <i class="fa fa-envelope  icones"></i><span class="titulo-page"> Contato </span>
-                </a>
-            </li>
-            </ul>
-        </div>
-        <div class="redes-sociais">
-            <ul>
-                <li>
-                    <a href="https://twitter.com/snoopyrado" target="_blank">
-                        <i class="fa fa-twitter-square titulo-redes" id="twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://br.pinterest.com/snoopyrado/" target="_blank">
-                        <i class="fa fa-pinterest-square titulo-redes" id="pinterest"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/ErivanPereira" target="_blank">
-                        <i class="fa fa-github-square titulo-redes" id="github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/106269597591137833014" target="_blank">
-                        <i class="fa fa-google-plus-square titulo-redes" id="googleplus"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <script language="javascript" type="text/javascript" src="script/pontos.js"></script>
+								<input type="submit" value="Enviar">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="overflow: auto;float: right;">
+			<h3 id="tituloGame">
+				Desenvolvido por Erivan Pereira
+			</h3>
+		</div>
+	</div>
 </body>
+
 </html>

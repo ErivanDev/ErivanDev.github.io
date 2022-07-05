@@ -39,17 +39,31 @@ function draw(){
     var i; var s = g.length;
     for(i=0; i<s; i++){
         var o = g[i];
-        var e = d(mouseX,mouseY,o.x,o.y);
-        if(e <=50){ 
+        var e = d(mouseX/3,mouseY/3-25,o.x,o.y);
+        if(e <=10){ 
             var t = c(o.x,o.y);
-            o.x -= Math.cos(t) * (50 - e)/2; 
-            o.y -= Math.sin(t) * (50 - e)/2;
+            o.x -= Math.cos(t) * (10 - e)/2; 
+            o.y -= Math.sin(t) * (10 - e)/2;
         }
         else{
             o.x = (o.x + o.h)/2; 
             o.y = (o.y + o.v)/2; 
         }            
-        img.set(o.x, o.y, [o.r, o.g, o.b, 255]); 
+
+        [(0, 0),(+1, 0),(+2, 0)]
+        [(0,+1),(+1,+1),(+2,+1)]
+        [(0,+2),(+1,+2),(+2,+2)]
+
+        img.set(   o.x*3,   o.y*3+50, [o.r, o.g, o.b, 255]); // (0, 0)
+        img.set( o.x*3+1,   o.y*3+50, [o.r, o.g, o.b, 255]); // (1, 0)
+        img.set( o.x*3+1, o.y*3+1+50, [o.r, o.g, o.b, 255]); // (1, 1)
+        img.set(   o.x*3, o.y*3+1+50, [o.r, o.g, o.b, 255]); // (0, 1)
+
+        img.set( o.x*3+2,   o.y*3+50, [o.r, o.g, o.b, 255]); // (2, 0)
+        img.set( o.x*3+2, o.y*3+1+50, [o.r, o.g, o.b, 255]); // (2, 1)
+        img.set( o.x*3+1, o.y*3+2+50, [o.r, o.g, o.b, 255]); // (1, 2)
+        img.set( o.x*3+2, o.y*3+2+50, [o.r, o.g, o.b, 255]); // (2, 2)
+        img.set(   o.x*3, o.y*3+2+50, [o.r, o.g, o.b, 255]); // (0, 2)
     }
 
     img.updatePixels();
