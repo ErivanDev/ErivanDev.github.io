@@ -238,7 +238,7 @@ li a:hover:not(.active) {
 
 .projeto {
 	float: left;
-	width: 23%;
+	width: 48%;
 	margin: 1%;
 	background: #fafffd;
 	border-radius: 10%;
@@ -265,21 +265,30 @@ li a:hover:not(.active) {
 .part {
 	/* height: 100px; */
 	float: left;
-	width: 28.9%;
+	width: calc(33.3% - 2% - 10px);
 	margin: 1%;
 	background: #F0FFE8;
 	border-radius: 10%;
-	padding: 10px;
+	padding: 5px;
 	filter: drop-shadow(4px 4px 4px #C5D7BC);
 }
 
-.svg-par {
-	top: -60px;
-	position: relative;
+.part svg {
+	width: 100%;
 }
 
 .svg-par {
-	padding-top: 50px;
+	top: 0px;
+	position: relative;
+	width: calc((100% / 3) - 10px);
+}
+
+.svg-impar {
+	width: calc((100% / 3) - 10px);
+}
+
+.svg-par {
+	padding-top: 0px;
 	position: relative;
 }
 
@@ -349,22 +358,22 @@ li a:hover:not(.active) {
 	height: 100px;
 }
 
-.ativo > a > .play {
+.ativo>a>.play {
 	position: absolute;
 	text-align: center;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	z-index: 1;
-	font-size: 100px;
+	transform: translate(-50%, -50%);
+	/* z-index: 1; */
+	font-size: 10vw;
 	color: #5da7d4;
 }
 
-.ativo > a > i {
+.ativo>a>i {
 	cursor: pointer;
 }
 
-.inativo > a > .play {
+.inativo>a>.play {
 	display: none;
 }
 
@@ -465,7 +474,7 @@ h2,
 h3,
 p,
 label,
-span > div {
+span>div {
 	font-family: 'Roboto', sans-serif, italic;
 }
 
@@ -521,4 +530,48 @@ span > div {
 
 .picture {
 	height: 0px;
+}
+
+.container>div {
+	width: 100%;
+	float: left;
+}
+
+#ball {
+	height: 100%;
+}
+
+#ball>div {
+	top: 0px;
+	transform: translateY(0px);
+}
+
+@media screen and (min-width: 800px) {
+	.projeto {
+		width: 23%;
+	}
+
+	.container>div {
+		width: 50%;
+	}
+
+	#ball {
+		height: 406px;
+	}
+
+	#ball>div {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.svg-par {
+		top: -60px;
+		position: relative;
+		width: calc((100% / 6) - 10px);
+		padding-top: 50px;
+	}
+
+	.svg-impar {
+		width: calc((100% / 6) - 10px);
+	}
 }
