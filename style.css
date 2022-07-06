@@ -94,7 +94,6 @@ li a:hover:not(.active) {
 
 #home-inner {
 	margin: 0;
-	margin-left: 5vw;
 	/* position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -120,7 +119,7 @@ li a:hover:not(.active) {
 #sobre-inner::before {
 	content: "";
 	width: 100%;
-	height: 80%;
+	height: 70%;
 	position: absolute;
 	top: inherit;
 	right: 0;
@@ -135,7 +134,7 @@ li a:hover:not(.active) {
 #sobre-inner::after {
 	content: "";
 	width: 100%;
-	height: 80%;
+	height: 70%;
 	position: absolute;
 	top: inherit;
 	right: 0;
@@ -254,6 +253,7 @@ li a:hover:not(.active) {
 
 #resumo {
 	margin: 0;
+	margin-left: 5vw;
 	position: absolute;
 	top: 50%;
 	-ms-transform: translateY(-50%);
@@ -262,19 +262,31 @@ li a:hover:not(.active) {
 	border: 6px solid #e8fff500;
 }
 
+#resumo > h1 {
+	font-size: 6vw;
+}
+
+#resumo > h4 {
+	font-size: 1vw;
+}
+
+#resumo > h5 {
+	font-size: 0.8vw;
+}
+
 .part {
 	/* height: 100px; */
 	float: left;
-	width: calc(33.3% - 2% - 10px);
+	width: calc(33.3% - 2% - 2vw);
 	margin: 1%;
 	background: #F0FFE8;
 	border-radius: 10%;
-	padding: 5px;
+	padding: 1vw;
 	filter: drop-shadow(4px 4px 4px #C5D7BC);
 }
 
 .part svg {
-	width: 100%;
+	width: 60%;
 }
 
 .svg-par {
@@ -523,7 +535,23 @@ span>div {
 	/* 75 + 30 */
 }
 
-#home,
+#home-inner {
+	border-bottom-right-radius: 400px;
+}
+
+h1 {
+	margin-top: 6vh;
+}
+
+h2 {
+	/* margin-top: 4vh; */
+}
+
+h3 {
+	/* margin-top: 2vh; */
+}
+
+#home-inner,
 .container {
 	background: #E8FFF5;
 }
@@ -573,5 +601,19 @@ span>div {
 
 	.svg-impar {
 		width: calc((100% / 6) - 10px);
+	}
+}
+
+#habilidades > div {
+	width: 84%;
+}
+
+@media screen and (min-width: 1400px) {
+	#slidegames, #sobreGame {
+		width: 60%;
+	}
+
+	#habilidades > div {
+		width: 68%;
 	}
 }
