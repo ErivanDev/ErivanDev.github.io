@@ -30,11 +30,18 @@
 					style="height: calc(100% - 10px); float: left; position: absolute; padding: 5px;"></img>
 			</div>
 			<!-- <li><a href="#blog">blog</a></li> -->
-			<li><a href="#contato">contato</a></li>
-			<li><a href="#projetos">projetos</a></li>
-			<li><a href="#games">games</a></li>
-			<li><a href="#sobre">sobre</a></li>
-			<li><a class="active" href="#home">home</a></li>
+			<li id="hamburguer">
+				<a href="javascript:void(0);" class="icon" onclick="showNav()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</li>
+			<div id="myLinks" class="myLinkDisabled">
+				<li><a onclick="showNav()" class="active" href="#home">home</a></li>
+				<li><a onclick="showNav()" href="#sobre">sobre</a></li>
+				<li><a onclick="showNav()" href="#games">games</a></li>
+				<li><a onclick="showNav()" href="#projetos">projetos</a></li>
+				<li><a onclick="showNav()" href="#contato">contato</a></li>
+			</div>
 		</ul>
 	</div>
 	<div id="content">
@@ -67,21 +74,22 @@
 					font-stretch: inherit;
 					font-style: italic;
 					font-weight: 400;">Erivan Lima</h1>
-					<h5 style="margin: 0px; font-family: 'Montserrat', sans-serif;">Desenvolvedor formado no curso de Sistemas e
+					<h5 style="margin: 0px; font-family: 'Montserrat', sans-serif;">Desenvolvedor formado no curso de
+						Sistemas e
 						Mídias Digitais da UFC</h6>
 						<div style="margin: 2%;">
 							<div style="float: left;">
-								<a style="font-size: 2.5vw; padding: 0.2vw;" href="https://github.com/ErivanDev" target="_blank">
+								<a href="https://github.com/ErivanDev" target="_blank">
 									<i class="fab fa-github" style="color: black"></i>
 								</a>
 							</div>
 							<div style="float: left;">
-								<a style="font-size: 2.5vw; padding: 0.2vw;" href="https://discordapp.com/users/navire#0762/" target="_blank">
+								<a href="https://discordapp.com/users/navire#0762/" target="_blank">
 									<i class="fa-brands fa-discord" style="color: #5562ea;"></i>
 								</a>
 							</div>
 							<div style="float: left;">
-								<a style="font-size: 2.5vw; padding: 0.2vw;" href="https://api.whatsapp.com/send?phone=558594395411" target="_blank">
+								<a href="https://api.whatsapp.com/send?phone=558594395411" target="_blank">
 									<i class="fa-brands fa-whatsapp" style="color: #1ad03f"></i>
 								</a>
 							</div>
@@ -102,12 +110,13 @@
 						por diversas outras áreas de desenvolvimento.
 					</p>
 				</div>
-				<div id="interesses" style="width: 80%; margin: auto; overflow: auto;">
+				<div id="interesses" style="margin: auto; overflow: auto;">
 					<h2>Interesses</h2>
 					<div style="width: 100%;overflow: auto;margin: auto;">
 						<div class="part">
 							<svg viewBox="0 0 400 400">
-								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+								</circle>
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
 								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
@@ -118,18 +127,22 @@
 						</div>
 						<div class="part">
 							<svg viewBox="0 0 400 400">
-								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+								</circle>
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
 								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
-								<text x="200" y="217" fill="white" font-size="38px" text-anchor="middle">JavaScript</text>
+								<text x="200" y="217" fill="white" font-size="38px"
+									text-anchor="middle">JavaScript</text>
 								Sorry, your browser does not support inline SVG.
 							</svg>
-							<p>JavaScript é uma linguagem que sempre me chamou atenção pela comunicação direta com o usuário</p>
+							<p>JavaScript é uma linguagem que sempre me chamou atenção pela comunicação direta com o
+								usuário</p>
 						</div>
 						<div class="part">
 							<svg viewBox="0 0 400 400">
-								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+								<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+								</circle>
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 								<circle cx="75" cy="75" r="30" fill="#95D5F6"></circle>
 								<circle cx="88" cy="66" r="8" fill="#DEF4FF"></circle>
@@ -144,7 +157,8 @@
 					<h2>Habilidades</h2>
 					<div style="margin: auto;">
 						<svg class="svg-par" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							</clipPath>
@@ -156,7 +170,8 @@
 							Sorry, your browser does not support inline SVG.
 						</svg>
 						<svg class="svg-impar" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
@@ -169,7 +184,8 @@
 							Sorry, your browser does not support inline SVG.
 						</svg>
 						<svg class="svg-par" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
@@ -182,7 +198,8 @@
 							Sorry, your browser does not support inline SVG.
 						</svg>
 						<svg class="svg-impar" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
@@ -195,7 +212,8 @@
 							Sorry, your browser does not support inline SVG.
 						</svg>
 						<svg class="svg-par" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
@@ -208,7 +226,8 @@
 							Sorry, your browser does not support inline SVG.
 						</svg>
 						<svg class="svg-impar" viewBox="0 0 400 400">
-							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+							<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500">
+							</circle>
 							<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 							<clipPath id="myCircle">
 								<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
@@ -254,8 +273,10 @@
 						Bilros
 					</h2>
 					<p id="descricaoGame">
-						Bilros é um jogo de ritmo musical, que mistura a mecânica difundida dentro dos rhythm games com a temática
-						da cultura de renda de bilros, prática muito comum em regiões do Brasil, como no Nordeste, região de origem
+						Bilros é um jogo de ritmo musical, que mistura a mecânica difundida dentro dos rhythm games com
+						a temática
+						da cultura de renda de bilros, prática muito comum em regiões do Brasil, como no Nordeste,
+						região de origem
 						dos desenvolvedores. Desenvolvi junto com colegas, desempenhando o papel de programador.
 					</p>
 				</div>
@@ -268,13 +289,18 @@
 					<div class="projeto">
 						<!-- https://fontawesome.com/search?q=node&s=solid%2Cbrands -->
 						<div class="tags" style="margin: 10px;">
-							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
-							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
-							<i class="fa-brands fa-node-js" style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
-							<i class="fa-brands fa-react" style="font-size:24px; margin: 1px; float: right; color: #61dafb"></i>
+							<i class="fa-brands fa-html5"
+								style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square"
+								style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-node-js"
+								style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
+							<i class="fa-brands fa-react"
+								style="font-size:24px; margin: 1px; float: right; color: #61dafb"></i>
 							<a target="_blank" href="https://gitlab.com/netaura/netauraexperience">
 								<i title="Netaura foi o meu Trabalho de Conclução de Curso. Ele é um jogo multiplayer para o ensino de Redes de Computadores. Click para ver mais."
-									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+									class="fa fa-circle-info"
+									style="font-size:24px; margin: 1px; float: left; color: teal;">
 								</i>
 							</a>
 						</div>
@@ -283,7 +309,9 @@
 						</div>
 						<div style="margin: auto; margin-bottom: 10px;">
 							<span>
-								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">Netaura
+								<div
+									style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
+									Netaura
 								</div>
 							</span>
 						</div>
@@ -291,11 +319,14 @@
 					<div class="projeto">
 						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
 						<div class="tags" style="margin: 10px;">
-							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
-							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-html5"
+								style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square"
+								style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
 							<a target="_blank" href="https://github.com/ErivanUFC/diagrama">
 								<i title="FADA foi um projeto que desenvolvi durante a minha bolsa de iniciação científica. Sendo uma ferramenta para visualização e análise de dados das notas dos alunos. Click para ver mais."
-									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+									class="fa fa-circle-info"
+									style="font-size:24px; margin: 1px; float: left; color: teal;">
 								</i>
 							</a>
 						</div>
@@ -304,7 +335,9 @@
 						</div>
 						<div style="margin: auto; margin-bottom: 10px;">
 							<span>
-								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">FADA
+								<div
+									style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
+									FADA
 								</div>
 							</span>
 						</div>
@@ -312,11 +345,14 @@
 					<div class="projeto">
 						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
 						<div class="tags" style="margin: 10px;">
-							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
-							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-html5"
+								style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square"
+								style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
 							<a target="_blank" href="https://github.com/ErivanDev/InfograficoCV2">
 								<i title="Trabalho de Comunicação Visual foi um trabalho desenvolvido durante a disciplina de Comunicação Visual II. Click para ver mais."
-									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+									class="fa fa-circle-info"
+									style="font-size:24px; margin: 1px; float: left; color: teal;">
 								</i>
 							</a>
 						</div>
@@ -325,7 +361,8 @@
 						</div>
 						<div style="margin: auto; margin-bottom: 10px;">
 							<span>
-								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
+								<div
+									style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
 									Trabalho de Comunicação Visual</div>
 							</span>
 						</div>
@@ -333,12 +370,16 @@
 					<div class="projeto">
 						<!-- https://www.iconfinder.com/icons/317755/badge_html_html5_achievement_award_reward_trophy_icon -->
 						<div class="tags" style="margin: 10px;">
-							<i class="fa-brands fa-html5" style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
-							<i class="fa-brands fa-js-square" style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
-							<i class="fa-brands fa-node-js" style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
+							<i class="fa-brands fa-html5"
+								style="font-size:24px; margin: 1px; float: right; color: #f7941e"></i>
+							<i class="fa-brands fa-js-square"
+								style="font-size:24px; margin: 1px; float: right; color: #F0DB4F"></i>
+							<i class="fa-brands fa-node-js"
+								style="font-size:24px; margin: 1px; float: right; color: #539E43"></i>
 							<a target="_blank" href="https://github.com/ErivanDev/SimpleAgarioClone">
 								<i title="Clone Simples do Agar.IO foi um experimento que realizei para ver os usos da biblioteca Socket.IO. Click pra ver mais."
-									class="fa fa-circle-info" style="font-size:24px; margin: 1px; float: left; color: teal;">
+									class="fa fa-circle-info"
+									style="font-size:24px; margin: 1px; float: left; color: teal;">
 								</i>
 							</a>
 						</div>
@@ -347,7 +388,9 @@
 						</div>
 						<div style="margin: auto; margin-bottom: 10px;">
 							<span>
-								<div style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">Clone
+								<div
+									style="overflow: auto; text-align: center; float: left; width: 100%; margin-bottom: 10px;">
+									Clone
 									Simples do Agar.IO</div>
 							</span>
 						</div>
@@ -373,7 +416,8 @@
 								style="float: right;font-size: 24px;color: teal; margin: 17.72px;"></i>
 						</a>
 						<h3 id="tituloGame">
-							AmongNET Game: Um relato de experiência do uso da Virtualidade e da Realidade Aumentada no Ensino Remoto
+							AmongNET Game: Um relato de experiência do uso da Virtualidade e da Realidade Aumentada no
+							Ensino Remoto
 							Emergencial de Redes de Computadores
 						</h3>
 						<p id="descricaoGame">
@@ -392,7 +436,8 @@
 							<div style="margin: auto; width: 60%; overflow: hidden; position: relative;">
 								<svg id="svg" viewBox="0 0 400 400"
 									style="position: absolute; width: 100%; height: 100%; top: 50%; left: 0px; transform: translateY(-50%);">
-									<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6" fill="#e8fff500"></circle>
+									<circle cx="200" cy="200" r="180" stroke="#FFE600" stroke-width="6"
+										fill="#e8fff500"></circle>
 									<circle cx="200" cy="200" r="120" fill="#CAC43C"></circle>
 									<circle cx="250" cy="150" r="30" fill="#D5F472"></circle>
 									Sorry, your browser does not support inline SVG.
@@ -408,8 +453,10 @@
 							</div>
 						</div>
 						<div>
-							<iframe name="resposta" style="width: 100%; height: 34px; border:2px solid #e8fff5;"></iframe>
-							<form target="resposta" action="https://unashamed-case.000webhostapp.com/envio.php" method="post">
+							<iframe name="resposta"
+								style="width: 100%; height: 34px; border:2px solid #e8fff5;"></iframe>
+							<form target="resposta" action="https://unashamed-case.000webhostapp.com/envio.php"
+								method="post">
 								<div style="width: calc(50% - 5px); float: left; margin-right: 5px;">
 									<label for="email">Email</label>
 									<input type="text" id="email" name="email" placeholder="Seu email..">

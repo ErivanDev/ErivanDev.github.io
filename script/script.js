@@ -35,10 +35,10 @@ $(document).ready(function () {
 
     // NAVBAR
 
-    $("#navbar-inner li a").on("click", function () {
+    $("#navbar-inner div li a").on("click", function () {
         var selecionado = $(this);
 
-        $.each($("#navbar-inner li a"), function (index, i) {
+        $.each($("#navbar-inner div li a"), function (index, i) {
             $(i).removeClass();
             if ($(i).parent().index() == selecionado.parent().index()) $(i).addClass("active");
         });
@@ -48,7 +48,7 @@ $(document).ready(function () {
     var removeHome = false;
     var home = null;
 
-    $.each($("#navbar-inner li a"), function (index, i) {
+    $.each($("#navbar-inner div li a"), function (index, i) {
         if ($(i).attr('href') == section) {
             $(i).addClass("active");
             removeHome = true;
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     $("#navbar-logo").on("click", function () {
         window.location = window.location.origin + "#home";
-        $.each($("#navbar-inner li a"), function (index, i) {
+        $.each($("#navbar-inner div li a"), function (index, i) {
             $(i).removeClass();
             if ($(i).attr('href') == "#home") {
                 $(i).addClass("active");
@@ -112,3 +112,12 @@ $(document).ready(function () {
         }
     })
 });
+
+function showNav() {
+    var x = document.getElementById("myLinks");
+    if (document.getElementById('myLinks').className === "myLinkDisabled") {
+        document.getElementById('myLinks').setAttribute("class", "myLinkEnabled");
+    } else {
+        document.getElementById('myLinks').setAttribute("class", "myLinkDisabled");
+    }
+}

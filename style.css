@@ -15,7 +15,7 @@ ul {
 }
 
 li {
-	float: right;
+	float: left;
 }
 
 #navbar-logo {
@@ -45,7 +45,7 @@ li a:hover:not(.active) {
 }
 
 #navbar-inner {
-	height: 47px;
+	/* height: 47px; */
 	margin: auto;
 	/* width: 80%; */
 	width: 90%;
@@ -262,15 +262,15 @@ li a:hover:not(.active) {
 	border: 6px solid #e8fff500;
 }
 
-#resumo > h1 {
+#resumo>h1 {
 	font-size: 6vw;
 }
 
-#resumo > h4 {
+#resumo>h4 {
 	font-size: 1vw;
 }
 
-#resumo > h5 {
+#resumo>h5 {
 	font-size: 0.8vw;
 }
 
@@ -604,16 +604,106 @@ h3 {
 	}
 }
 
-#habilidades > div {
+#habilidades>div {
 	width: 84%;
 }
 
 @media screen and (min-width: 1400px) {
-	#slidegames, #sobreGame {
+
+	#slidegames,
+	#sobreGame {
 		width: 60%;
 	}
 
-	#habilidades > div {
+	#habilidades>div {
 		width: 68%;
+	}
+}
+
+#home-inner>div>img {
+	height: 100%;
+}
+
+@media screen and (max-width: 640px) {
+	#home-inner>div>img {
+		height: 50vh;
+	}
+}
+
+#resumo>div>div>a {
+	font-size: 2.5vw;
+	padding: 0.2vw;
+}
+
+@media screen and (max-width: 640px) {
+	#resumo>h1 {
+		font-size: 8vw;
+	}
+
+	#resumo>h4 {
+		font-size: 4vw;
+	}
+
+	#resumo>h5 {
+		font-size: 3.2vw;
+	}
+
+	#resumo>div>div>a {
+		font-size: 6vw;
+		padding: 0.5vw;
+	}
+}
+
+#hamburguer {
+	display: none;
+	width: 100px;
+	float: right;
+}
+
+.myLinkDisabled {
+	display: block;
+}
+
+.myLinkEnabled {
+	display: block;
+}
+
+@media screen and (max-width: 588px) {
+	#hamburguer {
+		display: block;
+	}
+
+	.myLinkDisabled {
+		display: none;
+	}
+
+	li {
+		width: 100%;
+	}
+}
+
+#myLinks {
+	float: right;
+	width: 100%;
+}
+
+@media screen and (min-width: 588px) {
+	#myLinks {
+		width: auto;
+	}
+}
+
+#interesses {
+	width: 80%;
+}
+
+@media screen and (max-width: 468px) {
+	.container {
+		margin: 12px;
+		padding: 12px;
+	}
+
+	#interesses {
+		width: 90%;
 	}
 }
